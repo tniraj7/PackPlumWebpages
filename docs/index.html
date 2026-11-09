@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="PackPlum turns school, college and tuition timetables into one calm packing list for tomorrow. For parents and students, on iPhone, iPad and Android.">
+    <meta name="theme-color" content="#f8f7fc" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#161522" media="(prefers-color-scheme: dark)">
+    <meta property="og:title" content="PackPlum — a little less to remember">
+    <meta property="og:description" content="PackPlum turns school, college and tuition timetables into one calm packing list for tomorrow. For parents and students, on iPhone, iPad and Android.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/svg+xml" href="/PackPlumWebpages/favicon.svg">
+    <title>PackPlum — a little less to remember</title>
+
+    <!-- Resolve the theme before first paint so there is no light flash in dark mode. -->
+    <script>
+      (function () {
+        var root = document.documentElement;
+        var stored = null;
+
+        try {
+          stored = localStorage.getItem("packplum-theme");
+        } catch (error) {}
+
+        var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = stored === "light" || stored === "dark" ? stored : prefersDark ? "dark" : "light";
+
+        root.dataset.theme = theme;
+        root.classList.add("js");
+      })();
+    </script>
+  <link rel="stylesheet" href="/PackPlumWebpages/assets/Layout.BSlICOkd.css"></head>
+
+  <body class="min-h-dvh overflow-x-hidden">
+    
+  <header class="sticky top-0 z-50 border-b border-line/60 bg-bg/75 backdrop-blur-xl">
+  <nav class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6" aria-label="Main">
+    <a href="/PackPlumWebpages/" aria-label="PackPlum home">
+      <span class="inline-flex items-center gap-2.5">
+  <span class="grid size-9 place-items-center rounded-xl bg-primary text-on-primary shadow-soft">
+    <svg viewBox="0 0 24 24" class="size-5" aria-hidden="true">
+      <path d="M9 6V5a3 3 0 0 1 6 0v1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+      <rect x="4.5" y="6" width="15" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"></rect>
+      <path d="M8.5 13.2 10.8 15.5 15.5 10.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+  </span>
+  <span class="font-display text-xl font-semibold tracking-tight text-ink">PackPlum</span>
+</span>
+    </a>
+
+    <ul class="hidden items-center gap-1 md:flex">
+      <li>
+            <a href="/PackPlumWebpages/#who" class="rounded-full px-3.5 py-2 text-sm font-medium text-ink-muted transition hover:bg-surface-mid hover:text-ink">
+              Who it&#39;s for
+            </a>
+          </li><li>
+            <a href="/PackPlumWebpages/#features" class="rounded-full px-3.5 py-2 text-sm font-medium text-ink-muted transition hover:bg-surface-mid hover:text-ink">
+              Features
+            </a>
+          </li><li>
+            <a href="/PackPlumWebpages/#how" class="rounded-full px-3.5 py-2 text-sm font-medium text-ink-muted transition hover:bg-surface-mid hover:text-ink">
+              How it works
+            </a>
+          </li><li>
+            <a href="/PackPlumWebpages/#privacy" class="rounded-full px-3.5 py-2 text-sm font-medium text-ink-muted transition hover:bg-surface-mid hover:text-ink">
+              Privacy
+            </a>
+          </li><li>
+            <a href="/PackPlumWebpages/#faq" class="rounded-full px-3.5 py-2 text-sm font-medium text-ink-muted transition hover:bg-surface-mid hover:text-ink">
+              FAQ
+            </a>
+          </li>
+    </ul>
+
+    <div class="flex items-center gap-2">
+      <button type="button" data-theme-toggle aria-label="Switch theme" class="grid size-10 place-items-center rounded-full border border-line text-ink-muted transition hover:bg-surface-mid hover:text-ink">
+        <svg viewBox="0 0 24 24" class="size-5 dark:hidden" aria-hidden="true">
+          <path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"></path>
+        </svg>
+        <svg viewBox="0 0 24 24" class="hidden size-5 dark:block" aria-hidden="true">
+          <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"></circle>
+          <path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path>
+        </svg>
+      </button>
+
+      <a href="/PackPlumWebpages/#download" class="hidden rounded-full bg-primary px-4 py-2 text-sm font-semibold text-on-primary shadow-soft transition hover:brightness-110 sm:inline-flex">
+        Get PackPlum
+      </a>
+    </div>
+  </nav>
+</header>
+  <main>
+    <section class="relative isolate overflow-hidden">
+  <div class="page-glow absolute inset-0 -z-10" aria-hidden="true"></div>
+  <div class="dot-grid absolute inset-0 -z-10 opacity-40 [mask-image:radial-gradient(ellipse_at_top,black_20%,transparent_70%)]" aria-hidden="true"></div>
+
+  <div class="mx-auto grid max-w-6xl items-center gap-14 px-4 pt-14 pb-20 sm:px-6 md:pt-20 lg:grid-cols-[1.1fr_1fr] lg:gap-8 lg:pb-28">
+    <div class="rise-in">
+      <span class="eyebrow">
+        <span class="size-1.5 rounded-full bg-primary"></span>
+        For iPhone, iPad and Android
+      </span>
+
+      <h1 class="mt-6 text-5xl leading-[1.02] font-semibold text-ink sm:text-6xl lg:text-7xl">
+        A little <span class="relative whitespace-nowrap text-primary">
+          less
+          <svg viewBox="0 0 120 12" preserveAspectRatio="none" class="absolute -bottom-1 left-0 h-3 w-full text-primary/40" aria-hidden="true">
+            <path d="M2 8c20-6 40-6 58-2s38 4 58-2" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path>
+          </svg>
+        </span>
+        <br>
+        to remember.
+      </h1>
+
+      <p class="mt-6 max-w-xl text-lg leading-relaxed text-ink-muted sm:text-xl">
+        PackPlum turns school, college and tuition timetables into one calm packing list for tomorrow. Parents pack
+        with their kids, students pack for themselves — and nobody gets that 8 a.m. “I forgot my notebook” call.
+      </p>
+
+      <a href="#privacy" class="group mt-7 inline-flex items-center gap-3 rounded-2xl border border-line bg-surface/70 py-2 pr-4 pl-2 backdrop-blur transition hover:border-line-strong">
+        <span class="grid size-9 shrink-0 place-items-center rounded-xl bg-primary-soft text-on-primary-soft">
+          <svg viewBox="0 0 24 24" class="size-5" aria-hidden="true">
+            <rect x="5" y="10.5" width="14" height="10" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"></rect>
+            <path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+          </svg>
+        </span>
+        <span class="text-sm leading-snug">
+          <span class="block font-semibold text-ink">Private by design</span>
+          <span class="text-ink-muted">Your data never leaves your device.</span>
+        </span>
+        <svg viewBox="0 0 16 16" class="size-4 text-ink-muted transition group-hover:translate-x-0.5" aria-hidden="true">
+          <path d="M6 3.5 10.5 8 6 12.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </a>
+
+      <div class="flex flex-col gap-3 sm:flex-row mt-7">
+  <span aria-label="App Store, coming soon" class="group inline-flex min-w-52 items-center gap-3 rounded-2xl px-5 py-3 shadow-soft transition bg-primary text-on-primary hover:brightness-110"><svg viewBox="0 0 24 24" class="size-7 shrink-0" aria-hidden="true">
+              <rect x="6" y="2.5" width="12" height="19" rx="3" fill="none" stroke="currentColor" stroke-width="1.6"></rect>
+              <path d="M10.5 5h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+            </svg><span class="flex flex-col leading-tight">
+            <span class="text-[0.7rem] opacity-80">Coming soon to</span>
+            <span class="font-display text-lg font-semibold">App Store</span>
+          </span>
+        </span><span aria-label="Google Play, coming soon" class="group inline-flex min-w-52 items-center gap-3 rounded-2xl px-5 py-3 shadow-soft transition border border-line-strong bg-surface text-ink hover:bg-surface-low"><svg viewBox="0 0 24 24" class="size-7 shrink-0" aria-hidden="true">
+              <path d="M7 4.5 17.5 12 7 19.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path>
+            </svg><span class="flex flex-col leading-tight">
+            <span class="text-[0.7rem] opacity-80">Coming soon to</span>
+            <span class="font-display text-lg font-semibold">Google Play</span>
+          </span>
+        </span>
+</div>
+
+      <ul class="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-ink-muted">
+        <li class="flex items-center gap-2">
+          <svg viewBox="0 0 16 16" class="size-4 text-primary" aria-hidden="true">
+            <path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          No account needed
+        </li>
+        <li class="flex items-center gap-2">
+          <svg viewBox="0 0 16 16" class="size-4 text-primary" aria-hidden="true">
+            <path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          Works offline
+        </li>
+        <li class="flex items-center gap-2">
+          <svg viewBox="0 0 16 16" class="size-4 text-primary" aria-hidden="true">
+            <path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          Free, with family-friendly ads
+        </li>
+      </ul>
+    </div>
+
+    <div class="rise-in relative mx-auto w-full max-w-md" style="--rise-delay: 150ms">
+      <div class="absolute inset-x-6 top-10 bottom-0 -z-10 rounded-[3rem] bg-lavender/60 blur-3xl" aria-hidden="true"></div>
+
+      <div class="grid grid-cols-[1fr_1fr] items-end">
+        <figure class="relative float-slower relative z-0 translate-x-6 translate-y-6 rotate-[-5deg] opacity-95">
+  <div class="relative aspect-[9/19.5] w-full border border-line-strong bg-surface-high p-[3.5%] shadow-soft rounded-[2rem]">
+    <div class="@container relative h-full w-full overflow-hidden bg-bg rounded-[1.6rem]">
+      <span class="absolute top-[2.2%] left-1/2 z-10 aspect-square w-[4.5%] -translate-x-1/2 rounded-full bg-black"></span>
+
+      <div class="flex h-full flex-col gap-[4cqw] px-[7%] pt-[16%] pb-[7%] text-[7cqw]" role="img" aria-label="Weekly timetable screenshot placeholder">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-[0.55em] font-medium tracking-wide text-ink-muted uppercase">PackPlum</p>
+                <p class="font-display text-[1.05em] leading-tight font-semibold text-ink">Weekly timetable</p>
+              </div>
+              <span class="aspect-square w-[14%] rounded-full bg-lavender"></span>
+            </div>
+
+            <div class="flex gap-[3%]">
+              <span class="h-[1.6em] w-[30%] rounded-full bg-primary-soft"></span>
+              <span class="h-[1.6em] w-[24%] rounded-full bg-surface-mid"></span>
+              <span class="h-[1.6em] w-[20%] rounded-full bg-surface-mid"></span>
+            </div>
+
+            <div class="flex flex-1 flex-col justify-start gap-[2cqw] rounded-[1.1em] bg-surface p-[6%]">
+              <div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 72%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 58%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 80%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 50%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 66%"></span>
+                  </div>
+            </div>
+
+            <p class="text-center text-[0.55em] text-ink-muted">Screenshot coming soon</p>
+          </div>
+    </div>
+  </div>
+</figure>
+        <figure class="relative float-slow relative z-10 -translate-x-6 rotate-[3deg]">
+  <div class="relative aspect-[9/19.5] w-full border border-line-strong bg-surface-high p-[3.5%] shadow-soft rounded-[2.6rem]">
+    <div class="@container relative h-full w-full overflow-hidden bg-bg rounded-[2.1rem]">
+      <span class="absolute top-[2.2%] left-1/2 z-10 h-[3.4%] w-[30%] -translate-x-1/2 rounded-full bg-black"></span>
+
+      <div class="flex h-full flex-col gap-[4cqw] px-[7%] pt-[16%] pb-[7%] text-[7cqw]" role="img" aria-label="Tomorrow's bag screenshot placeholder">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-[0.55em] font-medium tracking-wide text-ink-muted uppercase">PackPlum</p>
+                <p class="font-display text-[1.05em] leading-tight font-semibold text-ink">Tomorrow&#39;s bag</p>
+              </div>
+              <span class="aspect-square w-[14%] rounded-full bg-lavender"></span>
+            </div>
+
+            <div class="flex gap-[3%]">
+              <span class="h-[1.6em] w-[30%] rounded-full bg-primary-soft"></span>
+              <span class="h-[1.6em] w-[24%] rounded-full bg-surface-mid"></span>
+              <span class="h-[1.6em] w-[20%] rounded-full bg-surface-mid"></span>
+            </div>
+
+            <div class="flex flex-1 flex-col justify-start gap-[2cqw] rounded-[1.1em] bg-surface p-[6%]">
+              <div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 72%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 58%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 80%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 50%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 66%"></span>
+                  </div>
+            </div>
+
+            <p class="text-center text-[0.55em] text-ink-muted">Screenshot coming soon</p>
+          </div>
+    </div>
+  </div>
+</figure>
+      </div>
+
+      <div class="card absolute top-[18%] -left-2 z-20 hidden items-center gap-3 px-4 py-3 sm:flex">
+        <span class="grid size-8 place-items-center rounded-full bg-primary text-on-primary">
+          <svg viewBox="0 0 16 16" class="size-4" aria-hidden="true">
+            <path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </span>
+        <span class="text-sm leading-tight">
+          <span class="block font-semibold text-ink">Geometry box</span>
+          <span class="text-ink-muted">Maths · Period 2</span>
+        </span>
+      </div>
+
+      <div class="card absolute -right-2 bottom-[14%] z-20 hidden items-center gap-3 px-4 py-3 sm:flex">
+        <span class="grid size-8 place-items-center rounded-full bg-lavender text-on-lavender">
+          <svg viewBox="0 0 24 24" class="size-4" aria-hidden="true">
+            <path d="M6 16V11a6 6 0 1 1 12 0v5l1.5 2h-15Z M10 20.5a2 2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"></path>
+          </svg>
+        </span>
+        <span class="text-sm leading-tight">
+          <span class="block font-semibold text-ink">Pack for tomorrow</span>
+          <span class="text-ink-muted">Today · 8:00 pm</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+    <section id="who" class="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:py-28">
+  <div class="max-w-2xl mx-auto text-center" data-reveal>
+  <span class="eyebrow">Who it&#39;s for</span>
+  <h2 class="mt-5 text-4xl leading-tight font-semibold text-ink sm:text-5xl">Made for the whole family&#39;s mornings.</h2>
+  <p class="mt-5 text-lg leading-relaxed text-ink-muted">Whether you&#39;re packing for three kids or just for yourself, PackPlum fits how your week actually works.</p>
+</div>
+
+  <div class="mt-14 grid gap-5 md:grid-cols-3">
+    <article class="card flex flex-col p-7 transition hover:-translate-y-1" data-reveal style="--reveal-delay: 0ms">
+          <span class="grid size-12 place-items-center rounded-2xl bg-primary-soft text-on-primary-soft">
+            <svg viewBox="0 0 24 24" class="size-6" aria-hidden="true">
+              <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm8 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5ZM2.5 19a5.5 5.5 0 0 1 11 0M13.5 19a4 4 0 0 1 8 0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </span>
+          <p class="mt-6 text-sm font-semibold text-primary">Parents</p>
+          <h3 class="mt-2 text-2xl leading-snug font-semibold text-ink">Every child, every timetable, one evening routine.</h3>
+          <p class="mt-3 leading-relaxed text-ink-muted">Add a profile for each child — school, tuition and that Saturday art class included. PackPlum shows exactly what goes in each bag tomorrow, so packing takes minutes, not an argument.</p>
+          <ul class="mt-6 flex flex-wrap gap-2 pt-1">
+            <li class="rounded-full border border-line bg-surface-low px-3 py-1 text-xs font-medium text-ink-muted">A profile for each child</li><li class="rounded-full border border-line bg-surface-low px-3 py-1 text-xs font-medium text-ink-muted">Different schools and days</li><li class="rounded-full border border-line bg-surface-low px-3 py-1 text-xs font-medium text-ink-muted">Reminder the night before</li>
+          </ul>
+        </article><article class="card flex flex-col p-7 transition hover:-translate-y-1" data-reveal style="--reveal-delay: 90ms">
+          <span class="grid size-12 place-items-center rounded-2xl bg-lavender text-on-lavender">
+            <svg viewBox="0 0 24 24" class="size-6" aria-hidden="true">
+              <path d="M4 6.5 12 3l8 3.5-8 3.5-8-3.5Zm3 2v5c0 1.7 2.2 3 5 3s5-1.3 5-3v-5M20 6.5V12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </span>
+          <p class="mt-6 text-sm font-semibold text-primary">School students</p>
+          <h3 class="mt-2 text-2xl leading-snug font-semibold text-ink">Your own bag, your own way.</h3>
+          <p class="mt-3 leading-relaxed text-ink-muted">Check items off as they go in. See which period needs the lab coat or the atlas. When there&#39;s a holiday, cancel just that day — the rest of the week stays put.</p>
+          <ul class="mt-6 flex flex-wrap gap-2 pt-1">
+            <li class="rounded-full border border-line bg-surface-low px-3 py-1 text-xs font-medium text-ink-muted">Tick-off checklist</li><li class="rounded-full border border-line bg-surface-low px-3 py-1 text-xs font-medium text-ink-muted">Subject by subject</li><li class="rounded-full border border-line bg-surface-low px-3 py-1 text-xs font-medium text-ink-muted">Holidays in one tap</li>
+          </ul>
+        </article><article class="card flex flex-col p-7 transition hover:-translate-y-1" data-reveal style="--reveal-delay: 180ms">
+          <span class="grid size-12 place-items-center rounded-2xl bg-slate-soft text-ink">
+            <svg viewBox="0 0 24 24" class="size-6" aria-hidden="true">
+              <path d="M4 5h7a2 2 0 0 1 2 2v12a2 2 0 0 0-2-2H4Zm16 0h-7a2 2 0 0 0-2 2v12a2 2 0 0 1 2-2h7Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </span>
+          <p class="mt-6 text-sm font-semibold text-primary">College students</p>
+          <h3 class="mt-2 text-2xl leading-snug font-semibold text-ink">Lectures, labs and coaching — sorted.</h3>
+          <p class="mt-3 leading-relaxed text-ink-muted">Keep college, coaching and extra classes as separate schedules. PackPlum merges them into one list per day and leaves out the duplicates, so the charger only shows up once.</p>
+          <ul class="mt-6 flex flex-wrap gap-2 pt-1">
+            <li class="rounded-full border border-line bg-surface-low px-3 py-1 text-xs font-medium text-ink-muted">Multiple schedules</li><li class="rounded-full border border-line bg-surface-low px-3 py-1 text-xs font-medium text-ink-muted">Shared items listed once</li><li class="rounded-full border border-line bg-surface-low px-3 py-1 text-xs font-medium text-ink-muted">All seven days</li>
+          </ul>
+        </article>
+  </div>
+</section>
+    <section id="features" class="relative py-20 lg:py-28">
+  <div class="absolute inset-x-0 top-0 -z-10 h-full bg-surface-low/60" aria-hidden="true"></div>
+
+  <div class="mx-auto max-w-6xl px-4 sm:px-6">
+    <div class="max-w-2xl mx-auto text-center" data-reveal>
+  <span class="eyebrow">Features</span>
+  <h2 class="mt-5 text-4xl leading-tight font-semibold text-ink sm:text-5xl">Everything for tomorrow, nothing you don&#39;t need.</h2>
+  <p class="mt-5 text-lg leading-relaxed text-ink-muted">PackPlum does one job well: knowing what goes in the bag. No feeds, no chat, no clutter.</p>
+</div>
+
+    <div class="mt-14 grid gap-5 lg:grid-cols-6">
+      <!-- Combined bag -->
+      <article class="card overflow-hidden p-7 lg:col-span-4 lg:p-9" data-reveal>
+        <div class="grid gap-8 md:grid-cols-[1fr_1.1fr] md:items-center">
+          <div>
+            <h3 class="text-2xl font-semibold text-ink sm:text-3xl">One bag for tomorrow</h3>
+            <p class="mt-3 leading-relaxed text-ink-muted">
+              School in the morning, tuition after? PackPlum combines every active timetable into a single checklist for
+              the day — and items you need for both only show up once.
+            </p>
+          </div>
+
+          <div class="rounded-3xl border border-line bg-bg p-4" aria-hidden="true">
+            <div class="flex items-center justify-between px-2 pb-3">
+              <span class="font-display font-semibold text-ink">Thursday</span>
+              <span class="rounded-full bg-primary-soft px-2.5 py-1 text-xs font-medium text-on-primary-soft">2 of 4 packed</span>
+            </div>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-3 rounded-2xl bg-surface px-3 py-2.5">
+                    <span class="grid size-5 shrink-0 place-items-center rounded-full border border-primary bg-primary text-on-primary">
+                      <svg viewBox="0 0 12 12" class="size-3">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="min-w-0 flex-1">
+                      <span class="block truncate text-sm font-medium text-ink-muted line-through">Science notebook</span>
+                      <span class="block text-xs text-ink-muted">School</span>
+                    </span>
+                    
+                  </li><li class="flex items-center gap-3 rounded-2xl bg-surface px-3 py-2.5">
+                    <span class="grid size-5 shrink-0 place-items-center rounded-full border border-primary bg-primary text-on-primary">
+                      <svg viewBox="0 0 12 12" class="size-3">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="min-w-0 flex-1">
+                      <span class="block truncate text-sm font-medium text-ink-muted line-through">Geometry box</span>
+                      <span class="block text-xs text-ink-muted">School</span>
+                    </span>
+                    
+                  </li><li class="flex items-center gap-3 rounded-2xl bg-surface px-3 py-2.5">
+                    <span class="grid size-5 shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="min-w-0 flex-1">
+                      <span class="block truncate text-sm font-medium text-ink">Water bottle</span>
+                      <span class="block text-xs text-ink-muted">School · Tuition</span>
+                    </span>
+                    <span class="rounded-full bg-lavender px-2 py-0.5 text-[0.65rem] font-medium text-on-lavender">Listed once</span>
+                  </li><li class="flex items-center gap-3 rounded-2xl bg-surface px-3 py-2.5">
+                    <span class="grid size-5 shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="min-w-0 flex-1">
+                      <span class="block truncate text-sm font-medium text-ink">Physics practice sheets</span>
+                      <span class="block text-xs text-ink-muted">Tuition</span>
+                    </span>
+                    
+                  </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Seven-day timetable -->
+      <article class="card flex flex-col p-7 lg:col-span-2" data-reveal style="--reveal-delay: 90ms">
+        <h3 class="text-xl font-semibold text-ink">All seven days</h3>
+        <p class="mt-2 leading-relaxed text-ink-muted">Set up each weekday once — Saturday classes and Sunday tuition too.</p>
+        <div class="mt-auto grid grid-cols-7 gap-1.5 pt-8" aria-hidden="true">
+          <div class="flex flex-col items-center gap-2">
+                <div class="flex h-20 w-full flex-col justify-end gap-1 rounded-xl bg-surface-low p-1">
+                  <span class="h-3 rounded-md bg-primary-soft"></span><span class="h-3 rounded-md bg-primary-soft"></span><span class="h-3 rounded-md bg-primary-soft"></span>
+                </div>
+                <span class="text-xs font-medium text-ink-muted">M</span>
+              </div><div class="flex flex-col items-center gap-2">
+                <div class="flex h-20 w-full flex-col justify-end gap-1 rounded-xl bg-surface-low p-1">
+                  <span class="h-3 rounded-md bg-primary-soft"></span><span class="h-3 rounded-md bg-primary-soft"></span>
+                </div>
+                <span class="text-xs font-medium text-ink-muted">T</span>
+              </div><div class="flex flex-col items-center gap-2">
+                <div class="flex h-20 w-full flex-col justify-end gap-1 rounded-xl bg-surface-low p-1">
+                  <span class="h-3 rounded-md bg-primary-soft"></span><span class="h-3 rounded-md bg-primary-soft"></span><span class="h-3 rounded-md bg-primary-soft"></span>
+                </div>
+                <span class="text-xs font-medium text-ink-muted">W</span>
+              </div><div class="flex flex-col items-center gap-2">
+                <div class="flex h-20 w-full flex-col justify-end gap-1 rounded-xl bg-surface-low p-1">
+                  <span class="h-3 rounded-md bg-primary"></span>
+                </div>
+                <span class="text-xs font-medium text-primary">T</span>
+              </div><div class="flex flex-col items-center gap-2">
+                <div class="flex h-20 w-full flex-col justify-end gap-1 rounded-xl bg-surface-low p-1">
+                  <span class="h-3 rounded-md bg-primary-soft"></span><span class="h-3 rounded-md bg-primary-soft"></span>
+                </div>
+                <span class="text-xs font-medium text-ink-muted">F</span>
+              </div><div class="flex flex-col items-center gap-2">
+                <div class="flex h-20 w-full flex-col justify-end gap-1 rounded-xl bg-surface-low p-1">
+                  <span class="h-3 rounded-md bg-primary-soft"></span>
+                </div>
+                <span class="text-xs font-medium text-ink-muted">S</span>
+              </div><div class="flex flex-col items-center gap-2">
+                <div class="flex h-20 w-full flex-col justify-end gap-1 rounded-xl bg-surface-low p-1">
+                  <span class="h-3 rounded-md bg-primary-soft"></span>
+                </div>
+                <span class="text-xs font-medium text-ink-muted">S</span>
+              </div>
+        </div>
+      </article>
+
+      <!-- Holidays -->
+      <article class="card flex flex-col p-7 lg:col-span-2" data-reveal>
+        <h3 class="text-xl font-semibold text-ink">Holidays without the mess</h3>
+        <p class="mt-2 leading-relaxed text-ink-muted">Cancel school for one day and keep tuition on. Changed your mind? Undo.</p>
+        <div class="mt-auto space-y-2 pt-8 text-sm" aria-hidden="true">
+          <div class="flex items-center justify-between rounded-2xl border border-dashed border-line-strong px-4 py-3">
+            <span class="text-ink-muted line-through">School</span>
+            <span class="text-xs font-medium text-ink-muted">Fri · Holiday</span>
+          </div>
+          <div class="flex items-center justify-between rounded-2xl bg-primary-soft px-4 py-3">
+            <span class="font-medium text-on-primary-soft">Tuition</span>
+            <span class="text-xs font-medium text-on-primary-soft">Still on · 5 pm</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Reminder -->
+      <article class="card flex flex-col p-7 lg:col-span-2" data-reveal style="--reveal-delay: 90ms">
+        <h3 class="text-xl font-semibold text-ink">One gentle reminder</h3>
+        <p class="mt-2 leading-relaxed text-ink-muted">Pick a time the evening before. Just one nudge per profile — and no names on your lock screen.</p>
+        <div class="mt-auto pt-8" aria-hidden="true">
+          <div class="flex items-start gap-3 rounded-2xl border border-line bg-bg/80 p-3.5 shadow-soft backdrop-blur">
+            <span class="grid size-9 shrink-0 place-items-center rounded-xl bg-primary text-on-primary">
+              <svg viewBox="0 0 24 24" class="size-5">
+                <path d="M9 6V5a3 3 0 0 1 6 0v1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+                <rect x="4.5" y="6" width="15" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"></rect>
+              </svg>
+            </span>
+            <span class="min-w-0 text-sm">
+              <span class="flex justify-between gap-2">
+                <span class="font-semibold text-ink">PackPlum</span>
+                <span class="text-xs text-ink-muted">8:00 pm</span>
+              </span>
+              <span class="block text-ink-muted">Time to pack tomorrow’s bag</span>
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Copy and undo -->
+      <article class="card flex flex-col p-7 lg:col-span-2" data-reveal style="--reveal-delay: 180ms">
+        <h3 class="text-xl font-semibold text-ink">Copy a day, undo anytime</h3>
+        <p class="mt-2 leading-relaxed text-ink-muted">Wednesday looks like Monday? Copy it over in a tap. Drafts are kept if you step away.</p>
+        <div class="mt-auto flex items-center gap-3 pt-8 text-sm" aria-hidden="true">
+          <span class="rounded-2xl bg-surface-mid px-4 py-3 font-medium text-ink">Mon</span>
+          <svg viewBox="0 0 24 24" class="size-5 text-primary">
+            <path d="M5 12h13m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <span class="rounded-2xl bg-primary px-4 py-3 font-medium text-on-primary">Wed</span>
+          <span class="ml-auto rounded-full border border-line px-3 py-1.5 text-xs font-medium text-primary">Undo</span>
+        </div>
+      </article>
+
+      <!-- Photo fill -->
+      <article class="card flex flex-col gap-6 p-7 sm:flex-row sm:items-center lg:col-span-3" data-reveal>
+        <span class="grid size-14 shrink-0 place-items-center rounded-2xl bg-lavender text-on-lavender" aria-hidden="true">
+          <svg viewBox="0 0 24 24" class="size-7">
+            <path d="M4 8.5A2.5 2.5 0 0 1 6.5 6h1.8l1.2-2h5l1.2 2h1.8A2.5 2.5 0 0 1 20 8.5v8a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 16.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"></path>
+            <circle cx="12" cy="12.5" r="3.2" fill="none" stroke="currentColor" stroke-width="1.7"></circle>
+          </svg>
+        </span>
+        <div>
+          <h3 class="text-xl font-semibold text-ink">Fill a timetable from a photo</h3>
+          <p class="mt-2 leading-relaxed text-ink-muted">
+            Snap the printed timetable and see what PackPlum reads, right on your device. Check each day, fix anything it
+            misread, then save.
+          </p>
+        </div>
+      </article>
+
+      <!-- Comfort -->
+      <article class="card flex flex-col gap-6 p-7 sm:flex-row sm:items-center lg:col-span-3" data-reveal style="--reveal-delay: 90ms">
+        <span class="grid size-14 shrink-0 place-items-center rounded-2xl bg-slate-soft text-ink" aria-hidden="true">
+          <svg viewBox="0 0 24 24" class="size-7">
+            <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.7"></circle>
+            <path d="M12 4a8 8 0 0 0 0 16Z" fill="currentColor"></path>
+          </svg>
+        </span>
+        <div>
+          <h3 class="text-xl font-semibold text-ink">Easy on the eyes</h3>
+          <p class="mt-2 leading-relaxed text-ink-muted">
+            Calm Indigo & Lavender in light and dark, large text support, and VoiceOver and TalkBack labels throughout.
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+    <section id="how" class="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:py-28">
+  <div class="max-w-2xl mx-auto text-center" data-reveal>
+  <span class="eyebrow">How it works</span>
+  <h2 class="mt-5 text-4xl leading-tight font-semibold text-ink sm:text-5xl">Set it up once. Calm mornings after.</h2>
+  <p class="mt-5 text-lg leading-relaxed text-ink-muted">A few minutes of setup, and from then on PackPlum just knows what tomorrow needs.</p>
+</div>
+
+  <ol class="mt-14 grid gap-5 md:grid-cols-3">
+    <li class="card group relative flex flex-col overflow-hidden px-7 pt-7" data-reveal style="--reveal-delay: 0ms">
+          <span class="font-display text-sm font-semibold text-primary">01</span>
+          <h3 class="mt-3 text-2xl font-semibold text-ink">Add a profile</h3>
+          <p class="mt-2 leading-relaxed text-ink-muted">Just a name to start. Add one for each child, or one for yourself if you&#39;re the student.</p>
+          <div class="relative mx-auto mt-8 -mb-24 w-3/4 max-w-60 transition duration-500 group-hover:-translate-y-2">
+            <figure class="relative">
+  <div class="relative aspect-[9/19.5] w-full border border-line-strong bg-surface-high p-[3.5%] shadow-soft rounded-[2.6rem]">
+    <div class="@container relative h-full w-full overflow-hidden bg-bg rounded-[2.1rem]">
+      <span class="absolute top-[2.2%] left-1/2 z-10 h-[3.4%] w-[30%] -translate-x-1/2 rounded-full bg-black"></span>
+
+      <div class="flex h-full flex-col gap-[4cqw] px-[7%] pt-[16%] pb-[7%] text-[7cqw]" role="img" aria-label="Profiles screenshot placeholder">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-[0.55em] font-medium tracking-wide text-ink-muted uppercase">PackPlum</p>
+                <p class="font-display text-[1.05em] leading-tight font-semibold text-ink">Profiles</p>
+              </div>
+              <span class="aspect-square w-[14%] rounded-full bg-lavender"></span>
+            </div>
+
+            <div class="flex gap-[3%]">
+              <span class="h-[1.6em] w-[30%] rounded-full bg-primary-soft"></span>
+              <span class="h-[1.6em] w-[24%] rounded-full bg-surface-mid"></span>
+              <span class="h-[1.6em] w-[20%] rounded-full bg-surface-mid"></span>
+            </div>
+
+            <div class="flex flex-1 flex-col justify-start gap-[2cqw] rounded-[1.1em] bg-surface p-[6%]">
+              <div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 72%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 58%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 80%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 50%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 66%"></span>
+                  </div>
+            </div>
+
+            <p class="text-center text-[0.55em] text-ink-muted">Screenshot coming soon</p>
+          </div>
+    </div>
+  </div>
+</figure>
+          </div>
+          <div class="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-surface to-transparent" aria-hidden="true"></div>
+        </li><li class="card group relative flex flex-col overflow-hidden px-7 pt-7" data-reveal style="--reveal-delay: 90ms">
+          <span class="font-display text-sm font-semibold text-primary">02</span>
+          <h3 class="mt-3 text-2xl font-semibold text-ink">Set up the week</h3>
+          <p class="mt-2 leading-relaxed text-ink-muted">Pick the subjects for each day and what each one needs. Do it once — it repeats every week.</p>
+          <div class="relative mx-auto mt-8 -mb-24 w-3/4 max-w-60 transition duration-500 group-hover:-translate-y-2">
+            <figure class="relative">
+  <div class="relative aspect-[9/19.5] w-full border border-line-strong bg-surface-high p-[3.5%] shadow-soft rounded-[2rem]">
+    <div class="@container relative h-full w-full overflow-hidden bg-bg rounded-[1.6rem]">
+      <span class="absolute top-[2.2%] left-1/2 z-10 aspect-square w-[4.5%] -translate-x-1/2 rounded-full bg-black"></span>
+
+      <div class="flex h-full flex-col gap-[4cqw] px-[7%] pt-[16%] pb-[7%] text-[7cqw]" role="img" aria-label="Weekly timetable screenshot placeholder">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-[0.55em] font-medium tracking-wide text-ink-muted uppercase">PackPlum</p>
+                <p class="font-display text-[1.05em] leading-tight font-semibold text-ink">Weekly timetable</p>
+              </div>
+              <span class="aspect-square w-[14%] rounded-full bg-lavender"></span>
+            </div>
+
+            <div class="flex gap-[3%]">
+              <span class="h-[1.6em] w-[30%] rounded-full bg-primary-soft"></span>
+              <span class="h-[1.6em] w-[24%] rounded-full bg-surface-mid"></span>
+              <span class="h-[1.6em] w-[20%] rounded-full bg-surface-mid"></span>
+            </div>
+
+            <div class="flex flex-1 flex-col justify-start gap-[2cqw] rounded-[1.1em] bg-surface p-[6%]">
+              <div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 72%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 58%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 80%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 50%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 66%"></span>
+                  </div>
+            </div>
+
+            <p class="text-center text-[0.55em] text-ink-muted">Screenshot coming soon</p>
+          </div>
+    </div>
+  </div>
+</figure>
+          </div>
+          <div class="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-surface to-transparent" aria-hidden="true"></div>
+        </li><li class="card group relative flex flex-col overflow-hidden px-7 pt-7" data-reveal style="--reveal-delay: 180ms">
+          <span class="font-display text-sm font-semibold text-primary">03</span>
+          <h3 class="mt-3 text-2xl font-semibold text-ink">Pack the night before</h3>
+          <p class="mt-2 leading-relaxed text-ink-muted">Open tomorrow&#39;s bag, tick things off as they go in, and get a quiet reminder if you forget.</p>
+          <div class="relative mx-auto mt-8 -mb-24 w-3/4 max-w-60 transition duration-500 group-hover:-translate-y-2">
+            <figure class="relative">
+  <div class="relative aspect-[9/19.5] w-full border border-line-strong bg-surface-high p-[3.5%] shadow-soft rounded-[2.6rem]">
+    <div class="@container relative h-full w-full overflow-hidden bg-bg rounded-[2.1rem]">
+      <span class="absolute top-[2.2%] left-1/2 z-10 h-[3.4%] w-[30%] -translate-x-1/2 rounded-full bg-black"></span>
+
+      <div class="flex h-full flex-col gap-[4cqw] px-[7%] pt-[16%] pb-[7%] text-[7cqw]" role="img" aria-label="Tomorrow's bag screenshot placeholder">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-[0.55em] font-medium tracking-wide text-ink-muted uppercase">PackPlum</p>
+                <p class="font-display text-[1.05em] leading-tight font-semibold text-ink">Tomorrow&#39;s bag</p>
+              </div>
+              <span class="aspect-square w-[14%] rounded-full bg-lavender"></span>
+            </div>
+
+            <div class="flex gap-[3%]">
+              <span class="h-[1.6em] w-[30%] rounded-full bg-primary-soft"></span>
+              <span class="h-[1.6em] w-[24%] rounded-full bg-surface-mid"></span>
+              <span class="h-[1.6em] w-[20%] rounded-full bg-surface-mid"></span>
+            </div>
+
+            <div class="flex flex-1 flex-col justify-start gap-[2cqw] rounded-[1.1em] bg-surface p-[6%]">
+              <div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 72%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 58%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 80%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 50%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 66%"></span>
+                  </div>
+            </div>
+
+            <p class="text-center text-[0.55em] text-ink-muted">Screenshot coming soon</p>
+          </div>
+    </div>
+  </div>
+</figure>
+          </div>
+          <div class="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-surface to-transparent" aria-hidden="true"></div>
+        </li>
+  </ol>
+</section>
+    <section class="relative overflow-hidden py-20 lg:py-28" aria-label="App screens">
+  <div class="page-glow absolute inset-0 -z-10 opacity-70 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)]" aria-hidden="true"></div>
+
+  <div class="mx-auto max-w-6xl px-4 sm:px-6">
+    <div class="max-w-2xl mx-auto text-center" data-reveal>
+  <span class="eyebrow">A closer look</span>
+  <h2 class="mt-5 text-4xl leading-tight font-semibold text-ink sm:text-5xl">Quiet screens that get out of the way.</h2>
+  
+</div>
+  </div>
+
+  <div class="mt-14 flex snap-x snap-mandatory gap-6 overflow-x-auto px-4 pb-6 [scrollbar-width:thin] sm:px-6 min-[1600px]:justify-center" tabindex="0" aria-label="App screens, scroll sideways for more">
+    <div class="w-52 shrink-0 snap-center sm:w-56" data-reveal style="--reveal-delay: 0ms">
+          <figure class="relative">
+  <div class="relative aspect-[9/19.5] w-full border border-line-strong bg-surface-high p-[3.5%] shadow-soft rounded-[2.6rem]">
+    <div class="@container relative h-full w-full overflow-hidden bg-bg rounded-[2.1rem]">
+      <span class="absolute top-[2.2%] left-1/2 z-10 h-[3.4%] w-[30%] -translate-x-1/2 rounded-full bg-black"></span>
+
+      <div class="flex h-full flex-col gap-[4cqw] px-[7%] pt-[16%] pb-[7%] text-[7cqw]" role="img" aria-label="Tomorrow's bag screenshot placeholder">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-[0.55em] font-medium tracking-wide text-ink-muted uppercase">PackPlum</p>
+                <p class="font-display text-[1.05em] leading-tight font-semibold text-ink">Tomorrow&#39;s bag</p>
+              </div>
+              <span class="aspect-square w-[14%] rounded-full bg-lavender"></span>
+            </div>
+
+            <div class="flex gap-[3%]">
+              <span class="h-[1.6em] w-[30%] rounded-full bg-primary-soft"></span>
+              <span class="h-[1.6em] w-[24%] rounded-full bg-surface-mid"></span>
+              <span class="h-[1.6em] w-[20%] rounded-full bg-surface-mid"></span>
+            </div>
+
+            <div class="flex flex-1 flex-col justify-start gap-[2cqw] rounded-[1.1em] bg-surface p-[6%]">
+              <div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 72%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 58%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 80%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 50%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 66%"></span>
+                  </div>
+            </div>
+
+            <p class="text-center text-[0.55em] text-ink-muted">Screenshot coming soon</p>
+          </div>
+    </div>
+  </div>
+</figure>
+          <p class="mt-5 text-center font-display font-semibold text-ink">Tomorrow&#39;s bag</p>
+          <p class="mt-1 text-center text-sm text-ink-muted">One combined list across every timetable</p>
+        </div><div class="w-52 shrink-0 snap-center sm:w-56" data-reveal style="--reveal-delay: 70ms">
+          <figure class="relative">
+  <div class="relative aspect-[9/19.5] w-full border border-line-strong bg-surface-high p-[3.5%] shadow-soft rounded-[2rem]">
+    <div class="@container relative h-full w-full overflow-hidden bg-bg rounded-[1.6rem]">
+      <span class="absolute top-[2.2%] left-1/2 z-10 aspect-square w-[4.5%] -translate-x-1/2 rounded-full bg-black"></span>
+
+      <div class="flex h-full flex-col gap-[4cqw] px-[7%] pt-[16%] pb-[7%] text-[7cqw]" role="img" aria-label="Weekly timetable screenshot placeholder">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-[0.55em] font-medium tracking-wide text-ink-muted uppercase">PackPlum</p>
+                <p class="font-display text-[1.05em] leading-tight font-semibold text-ink">Weekly timetable</p>
+              </div>
+              <span class="aspect-square w-[14%] rounded-full bg-lavender"></span>
+            </div>
+
+            <div class="flex gap-[3%]">
+              <span class="h-[1.6em] w-[30%] rounded-full bg-primary-soft"></span>
+              <span class="h-[1.6em] w-[24%] rounded-full bg-surface-mid"></span>
+              <span class="h-[1.6em] w-[20%] rounded-full bg-surface-mid"></span>
+            </div>
+
+            <div class="flex flex-1 flex-col justify-start gap-[2cqw] rounded-[1.1em] bg-surface p-[6%]">
+              <div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 72%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 58%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 80%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 50%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 66%"></span>
+                  </div>
+            </div>
+
+            <p class="text-center text-[0.55em] text-ink-muted">Screenshot coming soon</p>
+          </div>
+    </div>
+  </div>
+</figure>
+          <p class="mt-5 text-center font-display font-semibold text-ink">Weekly timetable</p>
+          <p class="mt-1 text-center text-sm text-ink-muted">Seven days, edited in a few taps</p>
+        </div><div class="w-52 shrink-0 snap-center sm:w-56" data-reveal style="--reveal-delay: 140ms">
+          <figure class="relative">
+  <div class="relative aspect-[9/19.5] w-full border border-line-strong bg-surface-high p-[3.5%] shadow-soft rounded-[2.6rem]">
+    <div class="@container relative h-full w-full overflow-hidden bg-bg rounded-[2.1rem]">
+      <span class="absolute top-[2.2%] left-1/2 z-10 h-[3.4%] w-[30%] -translate-x-1/2 rounded-full bg-black"></span>
+
+      <div class="flex h-full flex-col gap-[4cqw] px-[7%] pt-[16%] pb-[7%] text-[7cqw]" role="img" aria-label="Schedules screenshot placeholder">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-[0.55em] font-medium tracking-wide text-ink-muted uppercase">PackPlum</p>
+                <p class="font-display text-[1.05em] leading-tight font-semibold text-ink">Schedules</p>
+              </div>
+              <span class="aspect-square w-[14%] rounded-full bg-lavender"></span>
+            </div>
+
+            <div class="flex gap-[3%]">
+              <span class="h-[1.6em] w-[30%] rounded-full bg-primary-soft"></span>
+              <span class="h-[1.6em] w-[24%] rounded-full bg-surface-mid"></span>
+              <span class="h-[1.6em] w-[20%] rounded-full bg-surface-mid"></span>
+            </div>
+
+            <div class="flex flex-1 flex-col justify-start gap-[2cqw] rounded-[1.1em] bg-surface p-[6%]">
+              <div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 72%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 58%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 80%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 50%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 66%"></span>
+                  </div>
+            </div>
+
+            <p class="text-center text-[0.55em] text-ink-muted">Screenshot coming soon</p>
+          </div>
+    </div>
+  </div>
+</figure>
+          <p class="mt-5 text-center font-display font-semibold text-ink">Schedules</p>
+          <p class="mt-1 text-center text-sm text-ink-muted">School, college, tuition and extra classes</p>
+        </div><div class="w-52 shrink-0 snap-center sm:w-56" data-reveal style="--reveal-delay: 210ms">
+          <figure class="relative">
+  <div class="relative aspect-[9/19.5] w-full border border-line-strong bg-surface-high p-[3.5%] shadow-soft rounded-[2rem]">
+    <div class="@container relative h-full w-full overflow-hidden bg-bg rounded-[1.6rem]">
+      <span class="absolute top-[2.2%] left-1/2 z-10 aspect-square w-[4.5%] -translate-x-1/2 rounded-full bg-black"></span>
+
+      <div class="flex h-full flex-col gap-[4cqw] px-[7%] pt-[16%] pb-[7%] text-[7cqw]" role="img" aria-label="Profiles screenshot placeholder">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-[0.55em] font-medium tracking-wide text-ink-muted uppercase">PackPlum</p>
+                <p class="font-display text-[1.05em] leading-tight font-semibold text-ink">Profiles</p>
+              </div>
+              <span class="aspect-square w-[14%] rounded-full bg-lavender"></span>
+            </div>
+
+            <div class="flex gap-[3%]">
+              <span class="h-[1.6em] w-[30%] rounded-full bg-primary-soft"></span>
+              <span class="h-[1.6em] w-[24%] rounded-full bg-surface-mid"></span>
+              <span class="h-[1.6em] w-[20%] rounded-full bg-surface-mid"></span>
+            </div>
+
+            <div class="flex flex-1 flex-col justify-start gap-[2cqw] rounded-[1.1em] bg-surface p-[6%]">
+              <div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 72%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 58%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 80%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 50%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 66%"></span>
+                  </div>
+            </div>
+
+            <p class="text-center text-[0.55em] text-ink-muted">Screenshot coming soon</p>
+          </div>
+    </div>
+  </div>
+</figure>
+          <p class="mt-5 text-center font-display font-semibold text-ink">Profiles</p>
+          <p class="mt-1 text-center text-sm text-ink-muted">One for each child, or just for you</p>
+        </div><div class="w-52 shrink-0 snap-center sm:w-56" data-reveal style="--reveal-delay: 280ms">
+          <figure class="relative">
+  <div class="relative aspect-[9/19.5] w-full border border-line-strong bg-surface-high p-[3.5%] shadow-soft rounded-[2.6rem]">
+    <div class="@container relative h-full w-full overflow-hidden bg-bg rounded-[2.1rem]">
+      <span class="absolute top-[2.2%] left-1/2 z-10 h-[3.4%] w-[30%] -translate-x-1/2 rounded-full bg-black"></span>
+
+      <div class="flex h-full flex-col gap-[4cqw] px-[7%] pt-[16%] pb-[7%] text-[7cqw]" role="img" aria-label="Holidays screenshot placeholder">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-[0.55em] font-medium tracking-wide text-ink-muted uppercase">PackPlum</p>
+                <p class="font-display text-[1.05em] leading-tight font-semibold text-ink">Holidays</p>
+              </div>
+              <span class="aspect-square w-[14%] rounded-full bg-lavender"></span>
+            </div>
+
+            <div class="flex gap-[3%]">
+              <span class="h-[1.6em] w-[30%] rounded-full bg-primary-soft"></span>
+              <span class="h-[1.6em] w-[24%] rounded-full bg-surface-mid"></span>
+              <span class="h-[1.6em] w-[20%] rounded-full bg-surface-mid"></span>
+            </div>
+
+            <div class="flex flex-1 flex-col justify-start gap-[2cqw] rounded-[1.1em] bg-surface p-[6%]">
+              <div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 72%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 58%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 80%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 50%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 66%"></span>
+                  </div>
+            </div>
+
+            <p class="text-center text-[0.55em] text-ink-muted">Screenshot coming soon</p>
+          </div>
+    </div>
+  </div>
+</figure>
+          <p class="mt-5 text-center font-display font-semibold text-ink">Holidays</p>
+          <p class="mt-1 text-center text-sm text-ink-muted">Cancel one day without touching the week</p>
+        </div><div class="w-52 shrink-0 snap-center sm:w-56" data-reveal style="--reveal-delay: 350ms">
+          <figure class="relative">
+  <div class="relative aspect-[9/19.5] w-full border border-line-strong bg-surface-high p-[3.5%] shadow-soft rounded-[2rem]">
+    <div class="@container relative h-full w-full overflow-hidden bg-bg rounded-[1.6rem]">
+      <span class="absolute top-[2.2%] left-1/2 z-10 aspect-square w-[4.5%] -translate-x-1/2 rounded-full bg-black"></span>
+
+      <div class="flex h-full flex-col gap-[4cqw] px-[7%] pt-[16%] pb-[7%] text-[7cqw]" role="img" aria-label="Evening reminder screenshot placeholder">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-[0.55em] font-medium tracking-wide text-ink-muted uppercase">PackPlum</p>
+                <p class="font-display text-[1.05em] leading-tight font-semibold text-ink">Evening reminder</p>
+              </div>
+              <span class="aspect-square w-[14%] rounded-full bg-lavender"></span>
+            </div>
+
+            <div class="flex gap-[3%]">
+              <span class="h-[1.6em] w-[30%] rounded-full bg-primary-soft"></span>
+              <span class="h-[1.6em] w-[24%] rounded-full bg-surface-mid"></span>
+              <span class="h-[1.6em] w-[20%] rounded-full bg-surface-mid"></span>
+            </div>
+
+            <div class="flex flex-1 flex-col justify-start gap-[2cqw] rounded-[1.1em] bg-surface p-[6%]">
+              <div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 72%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 58%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 80%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 50%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 66%"></span>
+                  </div>
+            </div>
+
+            <p class="text-center text-[0.55em] text-ink-muted">Screenshot coming soon</p>
+          </div>
+    </div>
+  </div>
+</figure>
+          <p class="mt-5 text-center font-display font-semibold text-ink">Evening reminder</p>
+          <p class="mt-1 text-center text-sm text-ink-muted">A single gentle nudge the night before</p>
+        </div>
+  </div>
+</section>
+    <section id="privacy" class="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:py-28">
+  <div class="relative overflow-hidden rounded-[2.5rem] bg-primary-soft px-6 py-14 sm:px-12 lg:px-16 lg:py-20" data-reveal>
+    <div class="dot-grid absolute inset-0 opacity-30 [mask-image:linear-gradient(to_left,black,transparent_60%)]" aria-hidden="true"></div>
+
+    <div class="relative grid gap-12 lg:grid-cols-[1fr_1.2fr] lg:items-center">
+      <div>
+        <span class="eyebrow">Private by design</span>
+        <h2 class="mt-5 text-4xl leading-tight font-semibold text-on-primary-soft sm:text-5xl">
+          Your data never leaves your device.
+        </h2>
+        <p class="mt-5 text-lg leading-relaxed text-on-primary-soft/80">
+          PackPlum holds children's names, timetables and contacts, so it's built to keep them close. Everything you enter
+          is stored on your phone or tablet, and nowhere else. Not on our servers, because we don't have any.
+        </p>
+        <p class="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold">
+          <a class="text-on-primary-soft underline decoration-on-primary-soft/40 underline-offset-4 hover:decoration-current" href="/PackPlumWebpages/privacy-policy/">
+            Privacy Policy for iPhone &amp; iPad
+          </a>
+          <a class="text-on-primary-soft underline decoration-on-primary-soft/40 underline-offset-4 hover:decoration-current" href="/PackPlumWebpages/android/privacy-policy/">
+            Privacy Policy for Android
+          </a>
+        </p>
+      </div>
+
+      <div>
+        <ul class="grid gap-4 sm:grid-cols-2">
+          <li class="flex flex-col gap-4 rounded-3xl bg-surface/80 p-5 backdrop-blur">
+                <span class="grid size-11 shrink-0 place-items-center rounded-2xl bg-primary text-on-primary">
+                  <svg viewBox="0 0 24 24" class="size-5" aria-hidden="true">
+                    <path d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm4 15h2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+                <span>
+                  <span class="block font-display text-lg font-semibold text-ink">Stays on your device</span>
+                  <span class="mt-1 block leading-relaxed text-ink-muted">Profiles, timetables, contacts and photos are stored only on your phone or tablet, and left out of cloud backups.</span>
+                </span>
+              </li><li class="flex flex-col gap-4 rounded-3xl bg-surface/80 p-5 backdrop-blur">
+                <span class="grid size-11 shrink-0 place-items-center rounded-2xl bg-primary text-on-primary">
+                  <svg viewBox="0 0 24 24" class="size-5" aria-hidden="true">
+                    <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-7 8a7 7 0 0 1 14 0M4 4l16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+                <span>
+                  <span class="block font-display text-lg font-semibold text-ink">No account, no servers</span>
+                  <span class="mt-1 block leading-relaxed text-ink-muted">There&#39;s nothing to sign up for and no PackPlum server to send your data to. We never see it.</span>
+                </span>
+              </li><li class="flex flex-col gap-4 rounded-3xl bg-surface/80 p-5 backdrop-blur">
+                <span class="grid size-11 shrink-0 place-items-center rounded-2xl bg-primary text-on-primary">
+                  <svg viewBox="0 0 24 24" class="size-5" aria-hidden="true">
+                    <path d="M2.5 9a14 14 0 0 1 19 0M6 12.5a9 9 0 0 1 12 0M9.5 16a4 4 0 0 1 5 0M12 19.5h.01" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+                <span>
+                  <span class="block font-display text-lg font-semibold text-ink">Works offline</span>
+                  <span class="mt-1 block leading-relaxed text-ink-muted">Timetables, bags and reminders all work without an internet connection.</span>
+                </span>
+              </li><li class="flex flex-col gap-4 rounded-3xl bg-surface/80 p-5 backdrop-blur">
+                <span class="grid size-11 shrink-0 place-items-center rounded-2xl bg-primary text-on-primary">
+                  <svg viewBox="0 0 24 24" class="size-5" aria-hidden="true">
+                    <path d="M2.5 12s3.5-6.5 9.5-6.5S21.5 12 21.5 12s-3.5 6.5-9.5 6.5S2.5 12 2.5 12Zm9.5 2.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5ZM4 4l16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+                <span>
+                  <span class="block font-display text-lg font-semibold text-ink">Family-friendly ads, no tracking</span>
+                  <span class="mt-1 block leading-relaxed text-ink-muted">Ads are rated for kids and never personalized. No analytics, and nothing that follows you across other apps or websites.</span>
+                </span>
+              </li>
+        </ul>
+        <p class="mt-5 px-1 text-sm leading-relaxed text-on-primary-soft/75">
+          The ads never see anything you enter in PackPlum. On Android, crash reports help us fix bugs. They
+          describe the app and device, never anything you enter.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+    <section id="download" class="relative overflow-hidden border-t border-line bg-surface-low/60 py-20 lg:py-28">
+  <div class="mx-auto grid max-w-6xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-[1.2fr_1fr]">
+    <div data-reveal>
+      <span class="eyebrow">iOS and Android</span>
+      <h2 class="mt-5 text-4xl leading-tight font-semibold text-ink sm:text-5xl">
+        Pack tonight. <span class="text-primary">Breathe tomorrow.</span>
+      </h2>
+      <p class="mt-5 max-w-xl text-lg leading-relaxed text-ink-muted">
+        The same calm PackPlum on every family device — native on each platform, so it feels right at home.
+      </p>
+
+      <div class="mt-10 grid gap-4 sm:grid-cols-2">
+        <div class="card p-6">
+              <h3 class="text-xl font-semibold text-ink">iPhone &amp; iPad</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink-muted">Built natively for iOS and iPadOS, with layouts that make use of the bigger iPad screen.</p>
+              <ul class="mt-4 flex flex-wrap gap-1.5">
+                <li class="rounded-full bg-primary-soft px-2.5 py-1 text-xs font-medium text-on-primary-soft">VoiceOver ready</li><li class="rounded-full bg-primary-soft px-2.5 py-1 text-xs font-medium text-on-primary-soft">Dynamic Type</li><li class="rounded-full bg-primary-soft px-2.5 py-1 text-xs font-medium text-on-primary-soft">Light &amp; dark</li>
+              </ul>
+            </div><div class="card p-6">
+              <h3 class="text-xl font-semibold text-ink">Android</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink-muted">Built natively with Material 3 for Android phones and tablets, in the same Indigo &amp; Lavender.</p>
+              <ul class="mt-4 flex flex-wrap gap-1.5">
+                <li class="rounded-full bg-primary-soft px-2.5 py-1 text-xs font-medium text-on-primary-soft">TalkBack ready</li><li class="rounded-full bg-primary-soft px-2.5 py-1 text-xs font-medium text-on-primary-soft">Large text</li><li class="rounded-full bg-primary-soft px-2.5 py-1 text-xs font-medium text-on-primary-soft">Light &amp; dark</li>
+              </ul>
+            </div>
+      </div>
+
+      <div class="flex flex-col gap-3 sm:flex-row mt-10">
+  <span aria-label="App Store, coming soon" class="group inline-flex min-w-52 items-center gap-3 rounded-2xl px-5 py-3 shadow-soft transition bg-primary text-on-primary hover:brightness-110"><svg viewBox="0 0 24 24" class="size-7 shrink-0" aria-hidden="true">
+              <rect x="6" y="2.5" width="12" height="19" rx="3" fill="none" stroke="currentColor" stroke-width="1.6"></rect>
+              <path d="M10.5 5h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+            </svg><span class="flex flex-col leading-tight">
+            <span class="text-[0.7rem] opacity-80">Coming soon to</span>
+            <span class="font-display text-lg font-semibold">App Store</span>
+          </span>
+        </span><span aria-label="Google Play, coming soon" class="group inline-flex min-w-52 items-center gap-3 rounded-2xl px-5 py-3 shadow-soft transition border border-line-strong bg-surface text-ink hover:bg-surface-low"><svg viewBox="0 0 24 24" class="size-7 shrink-0" aria-hidden="true">
+              <path d="M7 4.5 17.5 12 7 19.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path>
+            </svg><span class="flex flex-col leading-tight">
+            <span class="text-[0.7rem] opacity-80">Coming soon to</span>
+            <span class="font-display text-lg font-semibold">Google Play</span>
+          </span>
+        </span>
+</div>
+    </div>
+
+    <div class="relative mx-auto grid w-full max-w-sm grid-cols-2 items-center gap-4" data-reveal style="--reveal-delay: 120ms">
+      <div class="absolute inset-8 -z-10 rounded-full bg-primary/20 blur-3xl" aria-hidden="true"></div>
+      <figure class="relative translate-y-8">
+  <div class="relative aspect-[9/19.5] w-full border border-line-strong bg-surface-high p-[3.5%] shadow-soft rounded-[2.6rem]">
+    <div class="@container relative h-full w-full overflow-hidden bg-bg rounded-[2.1rem]">
+      <span class="absolute top-[2.2%] left-1/2 z-10 h-[3.4%] w-[30%] -translate-x-1/2 rounded-full bg-black"></span>
+
+      <div class="flex h-full flex-col gap-[4cqw] px-[7%] pt-[16%] pb-[7%] text-[7cqw]" role="img" aria-label="Schedules screenshot placeholder">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-[0.55em] font-medium tracking-wide text-ink-muted uppercase">PackPlum</p>
+                <p class="font-display text-[1.05em] leading-tight font-semibold text-ink">Schedules</p>
+              </div>
+              <span class="aspect-square w-[14%] rounded-full bg-lavender"></span>
+            </div>
+
+            <div class="flex gap-[3%]">
+              <span class="h-[1.6em] w-[30%] rounded-full bg-primary-soft"></span>
+              <span class="h-[1.6em] w-[24%] rounded-full bg-surface-mid"></span>
+              <span class="h-[1.6em] w-[20%] rounded-full bg-surface-mid"></span>
+            </div>
+
+            <div class="flex flex-1 flex-col justify-start gap-[2cqw] rounded-[1.1em] bg-surface p-[6%]">
+              <div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 72%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 58%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 80%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 50%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 66%"></span>
+                  </div>
+            </div>
+
+            <p class="text-center text-[0.55em] text-ink-muted">Screenshot coming soon</p>
+          </div>
+    </div>
+  </div>
+</figure>
+      <figure class="relative -translate-y-8">
+  <div class="relative aspect-[9/19.5] w-full border border-line-strong bg-surface-high p-[3.5%] shadow-soft rounded-[2rem]">
+    <div class="@container relative h-full w-full overflow-hidden bg-bg rounded-[1.6rem]">
+      <span class="absolute top-[2.2%] left-1/2 z-10 aspect-square w-[4.5%] -translate-x-1/2 rounded-full bg-black"></span>
+
+      <div class="flex h-full flex-col gap-[4cqw] px-[7%] pt-[16%] pb-[7%] text-[7cqw]" role="img" aria-label="Holidays screenshot placeholder">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-[0.55em] font-medium tracking-wide text-ink-muted uppercase">PackPlum</p>
+                <p class="font-display text-[1.05em] leading-tight font-semibold text-ink">Holidays</p>
+              </div>
+              <span class="aspect-square w-[14%] rounded-full bg-lavender"></span>
+            </div>
+
+            <div class="flex gap-[3%]">
+              <span class="h-[1.6em] w-[30%] rounded-full bg-primary-soft"></span>
+              <span class="h-[1.6em] w-[24%] rounded-full bg-surface-mid"></span>
+              <span class="h-[1.6em] w-[20%] rounded-full bg-surface-mid"></span>
+            </div>
+
+            <div class="flex flex-1 flex-col justify-start gap-[2cqw] rounded-[1.1em] bg-surface p-[6%]">
+              <div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 72%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-primary bg-primary">
+                      <svg viewBox="0 0 12 12" class="w-[60%] text-on-primary" aria-hidden="true">
+                          <path d="M2.5 6.2 5 8.6 9.5 3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 58%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 80%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 50%"></span>
+                  </div><div class="flex items-center gap-[6%] py-[2%]">
+                    <span class="grid aspect-square w-[10%] shrink-0 place-items-center rounded-full border border-line-strong">
+                      
+                    </span>
+                    <span class="h-[0.7em] rounded-full bg-surface-high" style="width: 66%"></span>
+                  </div>
+            </div>
+
+            <p class="text-center text-[0.55em] text-ink-muted">Screenshot coming soon</p>
+          </div>
+    </div>
+  </div>
+</figure>
+    </div>
+  </div>
+</section>
+    <section id="faq" class="mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:py-28">
+  <div class="max-w-2xl mx-auto text-center" data-reveal>
+  <span class="eyebrow">FAQ</span>
+  <h2 class="mt-5 text-4xl leading-tight font-semibold text-ink sm:text-5xl">Questions, answered.</h2>
+  
+</div>
+
+  <div class="mt-12 space-y-3">
+    <details class="card group px-6 py-5 [&amp;_summary::-webkit-details-marker]:hidden" data-reveal>
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-lg font-semibold text-ink">
+            Is PackPlum free?
+            <span class="grid size-8 shrink-0 place-items-center rounded-full bg-surface-mid text-ink-muted transition group-open:rotate-45 group-open:bg-primary-soft group-open:text-on-primary-soft">
+              <svg viewBox="0 0 16 16" class="size-4" aria-hidden="true">
+                <path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              </svg>
+            </span>
+          </summary>
+          <p class="mt-3 pr-10 leading-relaxed text-ink-muted">Yes. Profiles, timetables, filling a timetable from a photo, packing, holidays and reminders are all free, with no subscription. PackPlum shows a few family-friendly ads, and they&#39;re never personalized.</p>
+        </details><details class="card group px-6 py-5 [&amp;_summary::-webkit-details-marker]:hidden" data-reveal>
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-lg font-semibold text-ink">
+            How does the timetable scan work?
+            <span class="grid size-8 shrink-0 place-items-center rounded-full bg-surface-mid text-ink-muted transition group-open:rotate-45 group-open:bg-primary-soft group-open:text-on-primary-soft">
+              <svg viewBox="0 0 16 16" class="size-4" aria-hidden="true">
+                <path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              </svg>
+            </span>
+          </summary>
+          <p class="mt-3 pr-10 leading-relaxed text-ink-muted">Take or pick a photo of the timetable. PackPlum finds the table and reads each cell on your device, then shows you the subjects for each day to check and correct. The photo is never uploaded, and PackPlum doesn&#39;t keep it. The privacy policy explains each step.</p>
+        </details><details class="card group px-6 py-5 [&amp;_summary::-webkit-details-marker]:hidden" data-reveal>
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-lg font-semibold text-ink">
+            Do I need to create an account?
+            <span class="grid size-8 shrink-0 place-items-center rounded-full bg-surface-mid text-ink-muted transition group-open:rotate-45 group-open:bg-primary-soft group-open:text-on-primary-soft">
+              <svg viewBox="0 0 16 16" class="size-4" aria-hidden="true">
+                <path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              </svg>
+            </span>
+          </summary>
+          <p class="mt-3 pr-10 leading-relaxed text-ink-muted">No. PackPlum works the moment you open it. There&#39;s no sign-up, email or password.</p>
+        </details><details class="card group px-6 py-5 [&amp;_summary::-webkit-details-marker]:hidden" data-reveal>
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-lg font-semibold text-ink">
+            Where is my child&#39;s information kept?
+            <span class="grid size-8 shrink-0 place-items-center rounded-full bg-surface-mid text-ink-muted transition group-open:rotate-45 group-open:bg-primary-soft group-open:text-on-primary-soft">
+              <svg viewBox="0 0 16 16" class="size-4" aria-hidden="true">
+                <path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              </svg>
+            </span>
+          </summary>
+          <p class="mt-3 pr-10 leading-relaxed text-ink-muted">Only on your phone or tablet. Names, timetables, contacts and photos never leave the device, aren&#39;t sent to us, and are left out of cloud backups. On Android, crash reports help us fix bugs, but they never include anything you enter.</p>
+        </details><details class="card group px-6 py-5 [&amp;_summary::-webkit-details-marker]:hidden" data-reveal>
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-lg font-semibold text-ink">
+            Can I use it for more than one child?
+            <span class="grid size-8 shrink-0 place-items-center rounded-full bg-surface-mid text-ink-muted transition group-open:rotate-45 group-open:bg-primary-soft group-open:text-on-primary-soft">
+              <svg viewBox="0 0 16 16" class="size-4" aria-hidden="true">
+                <path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              </svg>
+            </span>
+          </summary>
+          <p class="mt-3 pr-10 leading-relaxed text-ink-muted">Yes. Add a profile for each child — or for yourself — and each one gets their own schedules, items and reminder.</p>
+        </details><details class="card group px-6 py-5 [&amp;_summary::-webkit-details-marker]:hidden" data-reveal>
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-lg font-semibold text-ink">
+            My child has school and tuition. Does that work?
+            <span class="grid size-8 shrink-0 place-items-center rounded-full bg-surface-mid text-ink-muted transition group-open:rotate-45 group-open:bg-primary-soft group-open:text-on-primary-soft">
+              <svg viewBox="0 0 16 16" class="size-4" aria-hidden="true">
+                <path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              </svg>
+            </span>
+          </summary>
+          <p class="mt-3 pr-10 leading-relaxed text-ink-muted">That&#39;s exactly what PackPlum is for. Add school, college, tuition and extra classes as separate schedules, and PackPlum combines them into one bag for each day. Items needed by both are only listed once.</p>
+        </details><details class="card group px-6 py-5 [&amp;_summary::-webkit-details-marker]:hidden" data-reveal>
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-lg font-semibold text-ink">
+            What happens on holidays?
+            <span class="grid size-8 shrink-0 place-items-center rounded-full bg-surface-mid text-ink-muted transition group-open:rotate-45 group-open:bg-primary-soft group-open:text-on-primary-soft">
+              <svg viewBox="0 0 16 16" class="size-4" aria-hidden="true">
+                <path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              </svg>
+            </span>
+          </summary>
+          <p class="mt-3 pr-10 leading-relaxed text-ink-muted">Cancel a single day for just the schedules that are off. Everything else, and the rest of your week, stays as it is.</p>
+        </details><details class="card group px-6 py-5 [&amp;_summary::-webkit-details-marker]:hidden" data-reveal>
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-lg font-semibold text-ink">
+            Does it work without the internet?
+            <span class="grid size-8 shrink-0 place-items-center rounded-full bg-surface-mid text-ink-muted transition group-open:rotate-45 group-open:bg-primary-soft group-open:text-on-primary-soft">
+              <svg viewBox="0 0 16 16" class="size-4" aria-hidden="true">
+                <path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              </svg>
+            </span>
+          </summary>
+          <p class="mt-3 pr-10 leading-relaxed text-ink-muted">Yes. Everything — timetables, packing and reminders — works offline.</p>
+        </details><details class="card group px-6 py-5 [&amp;_summary::-webkit-details-marker]:hidden" data-reveal>
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-lg font-semibold text-ink">
+            Does it sync between my phone and my child&#39;s tablet?
+            <span class="grid size-8 shrink-0 place-items-center rounded-full bg-surface-mid text-ink-muted transition group-open:rotate-45 group-open:bg-primary-soft group-open:text-on-primary-soft">
+              <svg viewBox="0 0 16 16" class="size-4" aria-hidden="true">
+                <path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              </svg>
+            </span>
+          </summary>
+          <p class="mt-3 pr-10 leading-relaxed text-ink-muted">Not yet. In this first release each device keeps its own data. Syncing between your Apple devices is planned for a later update.</p>
+        </details>
+  </div>
+</section>
+  </main>
+  <footer class="border-t border-line">
+  <div class="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-12 sm:px-6 md:flex-row md:items-center md:justify-between">
+    <div>
+      <span class="inline-flex items-center gap-2.5">
+  <span class="grid size-9 place-items-center rounded-xl bg-primary text-on-primary shadow-soft">
+    <svg viewBox="0 0 24 24" class="size-5" aria-hidden="true">
+      <path d="M9 6V5a3 3 0 0 1 6 0v1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+      <rect x="4.5" y="6" width="15" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"></rect>
+      <path d="M8.5 13.2 10.8 15.5 15.5 10.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+  </span>
+  <span class="font-display text-xl font-semibold tracking-tight text-ink">PackPlum</span>
+</span>
+      <p class="mt-3 text-sm text-ink-muted">A little less to remember.</p>
+    </div>
+
+    <nav aria-label="Footer">
+      <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-ink-muted">
+        <li><a class="hover:text-ink" href="/PackPlumWebpages/#features">Features</a></li>
+        <li><a class="hover:text-ink" href="/PackPlumWebpages/#faq">FAQ</a></li>
+        <li><a class="hover:text-ink" href="/PackPlumWebpages/privacy-policy/">Privacy Policy (iOS)</a></li>
+        <li><a class="hover:text-ink" href="/PackPlumWebpages/android/privacy-policy/">Privacy Policy (Android)</a></li>
+        <li><a class="hover:text-ink" href="/PackPlumWebpages/support/">Support</a></li>
+      </ul>
+    </nav>
+
+    <p class="text-sm text-ink-muted">© 2026 PackPlum</p>
+  </div>
+</footer>
+
+
+    <script type="module">function e(){let e=document.querySelectorAll(`[data-reveal]`);if(!(`IntersectionObserver`in window)){e.forEach(e=>e.classList.add(`is-visible`));return}let t=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting&&(e.target.classList.add(`is-visible`),t.unobserve(e.target))})},{rootMargin:`0px 0px -10% 0px`,threshold:.1});e.forEach(e=>t.observe(e))}var t=`packplum-theme`;function n(){let e=window.matchMedia(`(prefers-color-scheme: dark)`);document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=r()===`dark`?`light`:`dark`;i(e),s(e)})}),e.addEventListener(`change`,e=>{o()===null&&i(e.matches?`dark`:`light`)}),a()}function r(){return document.documentElement.dataset.theme===`dark`?`dark`:`light`}function i(e){document.documentElement.dataset.theme=e,a()}function a(){let e=r()===`dark`?`Switch to light theme`:`Switch to dark theme`;document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{t.setAttribute(`aria-label`,e)})}function o(){try{let e=localStorage.getItem(t);return e===`light`||e===`dark`?e:null}catch{return null}}function s(e){try{localStorage.setItem(t,e)}catch{}}n(),e();</script>
+  </body>
+</html>
