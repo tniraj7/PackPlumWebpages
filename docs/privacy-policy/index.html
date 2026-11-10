@@ -97,17 +97,18 @@
       <span class="eyebrow">PackPlum for iPhone and iPad</span>
       <h1 class="mt-5 text-5xl leading-[1.05] font-semibold text-ink sm:text-6xl">Privacy Policy</h1>
       <p class="mt-4 text-lg text-ink-muted">
-          <strong class="font-semibold text-ink">Effective date:</strong> November 4, 2026
-        </p>
+        <strong class="font-semibold text-ink">Effective date:</strong>
+        November 10, 2026
+      </p>
 
       <div class="legal mt-12">
-        
+
   <p class="summary">
     PackPlum keeps the profiles, timetables, contacts, and photos you enter on your iPhone or iPad. It works offline,
     has no account, and does not send what you enter to the developer or any server. Timetable scanning reads photos
-    on your device. PackPlum is free and shows family-friendly, non-personalized ads from Google AdMob. It does not
-    include analytics or crash reporting, does not sell personal data, and does not track you across apps or
-    websites.
+    on your device. Firebase Crashlytics sends crash and error diagnostics to help fix problems. PackPlum is free
+    and shows family-friendly, non-personalized ads from Google AdMob. It does not use Google Analytics, sell personal
+    data, or track you across apps or websites.
   </p>
 
   <h2>1. Who this policy covers</h2>
@@ -150,9 +151,16 @@
 
   <h2>3. Data collection and tracking</h2>
   <p>
-    <strong>In the app:</strong> the developer does not collect your information. PackPlum does not include analytics
-    or crash-reporting services, and it does not send your profiles, timetables, contacts, photos, app usage, or
-    diagnostics to the developer. It does not use your location, track you across other companies' apps or websites,
+    <strong>Crash diagnostics:</strong> PackPlum uses Google Firebase Crashlytics to report crashes and unexpected
+    errors automatically. Reports may include the app version, device and iOS information, crash stack traces and
+    app state, timestamps, and installation or session identifiers. When PackPlum reports a handled error, it supplies
+    a fixed operation name and failure category in place of the original error. PackPlum does not attach profiles,
+    contacts, timetables, photos, packing data, or an app user ID to these reports.
+  </p>
+  <p>
+    Google processes the diagnostics for Firebase, and we use them to find and fix problems. See
+    <a href="https://firebase.google.com/support/privacy">Firebase’s privacy and security information</a>.
+    PackPlum does not use Google Analytics or your location, track you across other companies’ apps or websites,
     or sell or rent personal information.
   </p>
   <p>
@@ -183,7 +191,7 @@
       PackPlum does not ask for permission to track you, so iOS does not give it or Google your device's advertising
       identifier.
     </p>
-  
+
   <p>
     PackPlum also uses FactoryKit, an open-source library that runs inside the app to organize its code. It does not
     receive or send any of your data.
@@ -327,18 +335,26 @@
     data from a lost device.
   </p>
 
+  <p>
+    <strong>Crash diagnostics:</strong> Firebase keeps crash stack traces and associated installation identifiers for
+    90 days before beginning removal. Deleting a profile or uninstalling PackPlum does not remove diagnostics already
+    sent. See <a href="https://firebase.google.com/support/privacy">Firebase’s retention practices</a>.
+  </p>
+
   <h2>10. Children's privacy</h2>
   <p>
   PackPlum is made for families: parents keeping track of their children's bags, and students who manage their own. A
   parent or guardian may enter a child's name, class, photo, timetable, and contacts, and that information stays on
-  the device where it was entered. PackPlum does not ask anyone's age, does not create accounts, and the developer
-  does not collect personal information from children, or anyone else, through an online service.
+  the device where it was entered. PackPlum does not ask anyone's age or create accounts. Section 3 explains the
+  separate diagnostics and advertising information processed when people use the app.
 </p>
 <p>
   Because children use PackPlum, every ad request is marked as directed at children, so Google limits the
   information it collects for ads, shows only family-friendly ads, and does not personalize them or use remarketing.
   Section 3 describes what Google's ad software receives.
 </p>
+
+    <p>The crash diagnostics described in section 3 apply when PackPlum is used on a child’s device as well.</p>
 
 <p>
   Only enter another person's information, such as a teacher's phone number, when you are allowed to. If a child
@@ -347,7 +363,7 @@
 
   <h2>11. International use</h2>
   <p>
-    PackPlum processes your information on your device. Google may process the ad information described in section 3
+    PackPlum processes the information you enter on your device. Google may process the ad and crash diagnostic information described in section 3
     outside your country under its own terms and privacy practices. If you open this website, email us, or share
     information through another app, that provider may process what it receives in other countries under its own
     privacy practices.
